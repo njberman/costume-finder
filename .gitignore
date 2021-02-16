@@ -1,0 +1,7 @@
+__pycache__
+build
+venv
+website
+*.log
+finder.spec
+make.bat
