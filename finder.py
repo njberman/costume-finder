@@ -2,6 +2,7 @@
 # document.querySelectorAll('.g .tF2Cxc');
 
 import os
+from subprocess import Popen
 from selenium import webdriver
 from paths import *
 from json_utils import *
@@ -76,7 +77,7 @@ try:
   term = input('What costume do you want? (anything) ') or 'batman'
   age = input('Age for costume? (kid/adult) ') or 'kid'
   gender = input('Boy or girl? (boy/girl) ') or 'boy'
-  driver = webdriver.Firefox(GECKO_PATH)
+  driver = webdriver.Firefox(executable_path=FULL_GECKO_PATH)
   scraper.set_driver(driver)
   scraper.search(term, gender, age)
 except KeyboardInterrupt:
