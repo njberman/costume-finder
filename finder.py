@@ -2,7 +2,6 @@
 # document.querySelectorAll('.g .tF2Cxc');
 
 import os
-from subprocess import Popen
 from selenium import webdriver
 from paths import *
 from json_utils import *
